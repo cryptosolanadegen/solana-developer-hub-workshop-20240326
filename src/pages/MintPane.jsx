@@ -37,9 +37,9 @@ export const MintPane = () => {
       name: metadata.name,
       uri: NFT_META_URI,
       sellerFeeBasisPoints: percentAmount(0),
-      });
-const { signature } = await builder.sendAndConfirm(umi);
-  setSignature(signature);
+    });
+    const { signature } = await builder.sendAndConfirm(umi);
+      setSignature(signature);
   };
 
   return (
